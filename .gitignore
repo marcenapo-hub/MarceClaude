@@ -1,0 +1,4 @@
+
+# Credenciales de Trello - NUNCA commitear
+.env.trello
+.env
