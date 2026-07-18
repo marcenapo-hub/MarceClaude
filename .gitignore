@@ -2,3 +2,7 @@
 # Credenciales de Trello - NUNCA commitear
 .env.trello
 .env
+
+# Python
+__pycache__/
+*.pyc
