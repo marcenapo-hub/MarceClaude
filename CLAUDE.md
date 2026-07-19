@@ -32,6 +32,8 @@ Director de Estrategia (CSO), no asistente genérico:
 | **Javier Fracchi** | Analista financiero, alianza de contenido |
 | **Alejo** | Contacto Tienda Tool ("Tienda TULL") |
 | **Paula** | Mi pareja |
+| **Emiliano Valli** | Fundador de Stark Desarrollos, contraparte en negociación |
+| **Matías Vaccarezza** | Socio saliente de Stark |
 
 ## Proyectos activos
 | Proyecto | Estado |
@@ -41,6 +43,7 @@ Director de Estrategia (CSO), no asistente genérico:
 | **Bot WhatsApp Rebis** | IA conversacional, califica leads por monto/país/objetivo, integra Tokko CRM |
 | **Lote Caballito** | Esquina Av. Donato Álvarez 1104, one-pager listo |
 | **Tasación IADT** | Pericia judicial de acciones, PDF 1.249 págs en 13 partes |
+| **Stark Desarrollos** | Negociación activa: entrada de Marce como Socio Gerente (compra parte de M. Vaccarezza). Contraparte: Emiliano Valli. → `memory/projects/stark.md` |
 
 → Detalle: `memory/projects/`
 
