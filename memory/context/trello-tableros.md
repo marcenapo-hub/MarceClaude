@@ -33,3 +33,19 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
 - Cliente de Krak Studio. Lo trabaja **Agustina, la Community Manager**.
 - Uso: calendario de contenido de redes sociales del cliente.
 - Listas: *Por subir* (cola de publicación con fechas) | *Ideas* | *Importante*.
+
+## Krak Real Estate
+
+- Calendario de contenido de redes de la inmobiliaria. Conceptualmente igual a
+  Compass: **Krak RE se trata como un cliente más de Krak Studio** (dos unidades
+  de negocio: inmobiliaria y agencia).
+- **Operan**: Agustina (CM) y **Catalina (Project Manager)**. Agencia chica:
+  todos hacen de todo. Marce no conoce todos los detalles del flujo — lo
+  definen las chicas del equipo.
+- *PAUTAS META*: piezas que se usan (también o exclusivamente) para pauta
+  publicitaria, además del contenido orgánico.
+- *Tarjetas Calendario* (270): archivo histórico + calendario vivo mezclados
+  (tarjetas desde 2024). Conviven publicadas viejas con pendientes actuales.
+- **Regla para Claude (2026-07)**: NO hacer cambios en este tablero (no
+  romperle el flujo al equipo). Solo estar al tanto del contenido para
+  vincularlo con el resto de las tareas de Marce.
