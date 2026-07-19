@@ -105,3 +105,23 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
 - Cliente de la agencia: **construye casas en Florida (EE.UU.)**.
 - Calendario de contenido, mismo concepto que los demás. Equipo opera,
   Claude observa.
+
+## Tablero de Control Tienda Tool
+
+- Tablero de control operativo de Tienda Tool. **Lo opera Alejo** (gerente y
+  socio). Marce entra periódicamente, en las reuniones con Alejo:
+  **miércoles y sábados** (dos semanales). Marce no puede dedicarle mucho
+  tiempo a esta empresa.
+- **Historia societaria**: la empresa nació por idea de Pablo Kisieluk; eran
+  4 socios en partes iguales (Pablo, Mariano, Emiliano y Marce). No funcionó
+  y Marce se quedó con la empresa. Alejo era el gerente: Marce le dio el
+  **30% de las acciones**, con acuerdo de cederle hasta el **50% cuando la
+  facturación llegue a ARS 40 millones mensuales**.
+- La matriz Eisenhower (UI/UNI/NUNI/Agendar/Delegar/Diferir) la maneja Alejo;
+  Marce desconoce el detalle. "Felicitaciones - Checks": Marce no sabe qué es.
+- *Reuniones Marcelo*: agenda de temas para las reuniones Marce-Alejo.
+- **Rol de Claude**: estar atento y encontrar vínculos entre las actividades
+  de todas las empresas; actuar de "mente maestra" que organiza, detecta
+  prioridades cruzadas y ayuda a automatizar procesos para liberarle tiempo
+  a Marce. NO tomar por ahora el proyecto de contenido en Claude que figura
+  en la agenda (lo está viendo Marce con Alejo; se cargará en este tablero).
