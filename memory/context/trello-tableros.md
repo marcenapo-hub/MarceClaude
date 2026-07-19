@@ -99,3 +99,9 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
 - Rol de Claude: observador. Interés futuro de Marce: **métricas** — pero las
   métricas reales se miran en las redes sociales, no especulando desde Trello.
   Tema pospuesto ("veamos eso más adelante").
+
+## Smarthomes
+
+- Cliente de la agencia: **construye casas en Florida (EE.UU.)**.
+- Calendario de contenido, mismo concepto que los demás. Equipo opera,
+  Claude observa.
