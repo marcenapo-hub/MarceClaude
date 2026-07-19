@@ -73,3 +73,21 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
   (preferencia de Marce: decir "el equipo", no "las chicas").
 - Marce desconoce el circuito operativo del tablero (lo define el equipo).
 - **Rol de Claude: observador, no operador** (por ahora).
+
+## Marce Personal (privado)
+
+- Tablero 100% privado de Marce — nadie más lo ve. Contiene info sensible
+  (negociaciones societarias, fichas de personas). Nuclea sus tareas
+  personales, profesionales (perito judicial) y societarias. No están todas
+  las tareas (falta de tiempo para cargarlas).
+- *Equipo* (31): **fichas por persona** que trabaja con Marce de alguna forma
+  (agentes, socios, contactos). Regla acordada: **cargar en los comentarios/
+  actividad de la tarjeta de cada persona los resúmenes de reuniones, la
+  información importante y las actualizaciones que Claude detecte** (ej. tras
+  una reunión con Emi Valli, comentar la tarjeta "Emi Valli").
+- *En Proceso* (56): prioridad por orden vertical. Marce pidió ayuda para
+  organizarla.
+- *Archivado* ≠ *Terminado*: Archivado = histórico para no perder cosas que
+  quizás vuelva a necesitar; Terminado = hecho. (Abierto a sugerencias.)
+- **Rol de Claude: operador pleno, en conjunto con Marce.** Tablero clave
+  para el trabajo estratégico compartido.
