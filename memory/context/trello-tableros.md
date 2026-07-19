@@ -91,3 +91,11 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
   quizás vuelva a necesitar; Terminado = hecho. (Abierto a sugerencias.)
 - **Rol de Claude: operador pleno, en conjunto con Marce.** Tablero clave
   para el trabajo estratégico compartido.
+
+## Moto Morini San Isidro
+
+- Calendario de contenido del cliente Moto Morini — misma lógica que todo
+  tablero de contenido. Lo opera el equipo de la agencia.
+- Rol de Claude: observador. Interés futuro de Marce: **métricas** — pero las
+  métricas reales se miran en las redes sociales, no especulando desde Trello.
+  Tema pospuesto ("veamos eso más adelante").
