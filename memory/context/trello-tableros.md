@@ -49,3 +49,20 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
 - **Regla para Claude (2026-07)**: NO hacer cambios en este tablero (no
   romperle el flujo al equipo). Solo estar al tanto del contenido para
   vincularlo con el resto de las tareas de Marce.
+
+## Krak Studio (tablero central de la agencia)
+
+- Seguimiento de TODAS las tareas de la agencia. Krak RE aparece como un
+  cliente más (etiquetas = cliente).
+- **Operan**: todo el equipo.
+- *En revisión* = tareas terminadas esperando revisión **de Marce**. Es un
+  cuello de botella real (Marce no tiene tiempo). **Claude debe ayudar
+  activamente a destrabar esta lista** — prepararle revisiones, resumir qué
+  espera aprobación, priorizar.
+- Calendario de publicaciones propias ("Publicar - ..." en *Generales*):
+  proceso poco claro, probable error de registro (vencidas que quizás sí se
+  publicaron). Pendiente de ordenar.
+- **Prioridad por orden vertical** (como en Administración).
+- **Rol de Claude**: operar (crear, mover, fechas, etiquetas) + vigilancia
+  estratégica transversal: detectar prioridades y cuestiones vinculadas entre
+  empresas. Al resumir: primero vencido y por vencer.
