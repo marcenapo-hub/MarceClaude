@@ -21,7 +21,23 @@ python3 .claude/skills/trello/scripts/trello.py summary "Krak Studio"       # re
 python3 .claude/skills/trello/scripts/trello.py overdue "Krak Studio"       # solo vencidas
 python3 .claude/skills/trello/scripts/trello.py cards "Krak Studio" "En proceso"
 python3 .claude/skills/trello/scripts/trello.py add-card "Krak Studio" "Tareas" "Título" --due 2026-08-01
+python3 .claude/skills/trello/scripts/trello.py comment "Marce Personal" "Emi Valli" "Resumen de la reunión..."
+python3 .claude/skills/trello/scripts/trello.py move "Krak Studio" "Nombre tarjeta" "En proceso" --top
+python3 .claude/skills/trello/scripts/trello.py show "Marce Personal" "Emi Valli"
 ```
+
+Las tarjetas se devuelven en **orden de posición**: en las listas de trabajo de
+Marce, arriba = más prioritario (regla fija). `move --top/--bottom` posiciona.
+
+## Reglas de operación por tablero
+
+**Leer `memory/context/trello-tableros.md` antes de operar.** Resumen:
+- Claude OPERA (crear/mover/comentar): Administración, Krak Studio, Marce Personal.
+- Claude solo OBSERVA (no tocar el flujo del equipo): todos los calendarios de
+  contenido (Krak RE, Compass, Moto Morini, Smarthomes, Marca Personal, Tienda
+  Tool) y el Tablero de Control Tienda Tool.
+- Fichas de personas en "Equipo" (Marce Personal): registrar ahí resúmenes de
+  reuniones y novedades por persona con `comment`.
 
 Los nombres de tablero y lista aceptan coincidencia parcial sin distinguir
 mayúsculas ("krak studio", "proceso").

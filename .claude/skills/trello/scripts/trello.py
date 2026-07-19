@@ -12,6 +12,9 @@ Uso:
   python3 trello.py overdue "Krak Studio"
   python3 trello.py cards "Krak Studio" "En proceso"
   python3 trello.py add-card "Krak Studio" "Tareas" "Título" [--desc "..."] [--due YYYY-MM-DD]
+  python3 trello.py comment "Marce Personal" "Emi Valli" "Texto del comentario"
+  python3 trello.py move "Krak Studio" "Nombre tarjeta" "En proceso" [--top|--bottom]
+  python3 trello.py show "Marce Personal" "Emi Valli"     # detalle + comentarios
 """
 import json
 import os
@@ -84,9 +87,23 @@ def board_data(name):
     lists = api(f"/boards/{board['id']}/lists", {"fields": "name"})
     cards = api(
         f"/boards/{board['id']}/cards",
-        {"fields": "name,idList,due,dueComplete,labels"},
+        {"fields": "name,idList,due,dueComplete,labels,pos"},
     )
+    # Orden vertical = prioridad (regla de Marce): ordenar por posición.
+    cards.sort(key=lambda c: c.get("pos", 0))
     return board, {l["id"]: l["name"] for l in lists}, cards
+
+
+def find_card(board_name, card_query):
+    """Busca una tarjeta por nombre parcial en un tablero. Única o error."""
+    board, lists, cards = board_data(board_name)
+    matches = [c for c in cards if card_query.lower() in c["name"].lower()]
+    if not matches:
+        sys.exit(f"No encontré tarjeta '{card_query}' en {board['name']}.")
+    if len(matches) > 1:
+        names = "; ".join(c["name"][:60] for c in matches[:8])
+        sys.exit(f"Coincide con varias tarjetas: {names}. Precisá el nombre.")
+    return board, lists, matches[0]
 
 
 def fmt_card(c, today):
@@ -168,6 +185,42 @@ def main():
                 params[param] = rest[rest.index(flag) + 1]
         card = api("/cards", params, method="POST")
         print(f"Creada: {card['name']} → {card['shortUrl']}")
+
+    elif cmd == "comment":
+        board, lists, card = find_card(args[0], args[1])
+        api(f"/cards/{card['id']}/actions/comments", {"text": args[2]}, method="POST")
+        print(f"Comentario agregado en '{card['name']}' ({board['name']})")
+
+    elif cmd == "move":
+        board, lists, card = find_card(args[0], args[1])
+        wanted = [lid for lid, ln in lists.items() if args[2].lower() in ln.lower()]
+        if not wanted:
+            sys.exit("Listas disponibles: " + ", ".join(lists.values()))
+        params = {"idList": wanted[0]}
+        if "--top" in args:
+            params["pos"] = "top"
+        elif "--bottom" in args:
+            params["pos"] = "bottom"
+        api(f"/cards/{card['id']}", params, method="PUT")
+        print(f"'{card['name']}' → {lists[wanted[0]]} ({board['name']})")
+
+    elif cmd == "show":
+        board, lists, card = find_card(args[0], args[1])
+        full = api(f"/cards/{card['id']}", {"fields": "name,desc,due,dueComplete,labels,dateLastActivity"})
+        print(f"# {full['name']}  [{board['name']} / {lists[card['idList']]}]")
+        if full.get("due"):
+            print(f"Vence: {full['due'][:10]}  Completa: {full['dueComplete']}")
+        if full.get("labels"):
+            print("Etiquetas:", ", ".join(l["name"] for l in full["labels"] if l.get("name")))
+        print(f"Últ. actividad: {full.get('dateLastActivity', '')[:10]}")
+        if full.get("desc"):
+            print("\n" + full["desc"][:4000])
+        comments = api(f"/cards/{card['id']}/actions", {"filter": "commentCard", "limit": 20})
+        if comments:
+            print("\n## Comentarios (recientes primero)")
+            for a in comments:
+                who = a.get("memberCreator", {}).get("fullName", "?")
+                print(f"- [{a['date'][:10]} {who}] {a['data']['text'][:800]}")
 
     else:
         sys.exit(f"Comando desconocido: {cmd}\n{__doc__}")
