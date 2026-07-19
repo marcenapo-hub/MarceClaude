@@ -99,6 +99,8 @@ pida un briefing, comentar la ficha de la persona en Trello (Marce Personal
   habilitado, conexión verificada: 139 propiedades en la cartera de Krak RE.
 - 2026-07-19: Gmail conectado = casilla **marcelo@krak.com.ar** (verificado).
   Los vencimientos impositivos llegan ahí desde el estudio contable.
-- 2026-07-19: Backfill parcial de 10 transcripciones Gemini (24/6-18/7) volcado
-  a fichas de Equipo en Trello y `memory/context/personas-detalle.md`. Quedan
-  ~19 más antiguas (hasta jul 2025) sin procesar — retomar si Marce lo pide.
+- 2026-07-19: Backfill COMPLETO de las 29 transcripciones Gemini disponibles
+  (jul 2025 - jul 2026) volcado a fichas de Equipo en Trello y
+  `memory/context/personas-detalle.md`. Hallazgo clave: Sabrina Villalva en
+  revisión formal de desempeño (riesgo de rescisión); Milagros Linares ya no
+  trabaja en el equipo (no tratar su ficha como activa).
