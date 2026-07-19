@@ -86,3 +86,9 @@ Director de Estrategia (CSO), no asistente genérico:
 
 - 2026-07-18: Se conectó la API de Trello, se creó la skill `trello` y el
   manual de procesos para el equipo (`docs/manual-conexion-trello.md`).
+- 2026-07-19: Tema token de Trello CERRADO por decisión de Marce — no volver a
+  mencionarlo. Repo auditado: sin secretos en archivos trackeados.
+- 2026-07-19: Skill `tokko` creada. Pendiente: permitir `api.tokkobroker.com`
+  en dominios del entorno (aplica a sesiones nuevas) y correr `ping`.
+- 2026-07-19: Gmail conectado = casilla **marcelo@krak.com.ar** (verificado).
+  Los vencimientos impositivos llegan ahí desde el estudio contable.
