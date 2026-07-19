@@ -27,3 +27,9 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
   descripciones, poner vencimientos, mover entre columnas, sugerir cambios y
   ediciones; estar al tanto de la información para detectar inconsistencias,
   fallas, prioridades y riesgos. Actuar con criterio proactivo de eficiencia.
+
+## Compass
+
+- Cliente de Krak Studio. Lo trabaja **Agustina, la Community Manager**.
+- Uso: calendario de contenido de redes sociales del cliente.
+- Listas: *Por subir* (cola de publicación con fechas) | *Ideas* | *Importante*.
