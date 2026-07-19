@@ -66,3 +66,10 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
 - **Rol de Claude**: operar (crear, mover, fechas, etiquetas) + vigilancia
   estratégica transversal: detectar prioridades y cuestiones vinculadas entre
   empresas. Al resumir: primero vencido y por vencer.
+
+## Marce Marca Personal
+
+- Contenido de redes de la marca personal de Marce. Lo opera **el equipo**
+  (preferencia de Marce: decir "el equipo", no "las chicas").
+- Marce desconoce el circuito operativo del tablero (lo define el equipo).
+- **Rol de Claude: observador, no operador** (por ahora).
