@@ -81,6 +81,13 @@ Director de Estrategia (CSO), no asistente genérico:
 - Foco industrial: corredores Panamericana, Acceso Oeste, Camino del Buen Ayre (Vicente López, San Isidro, Tigre, Pilar, Escobar)
 - Interés permanente: macro argentina, FCIs, CEDEARs, ONs, importación China→Argentina
 
+## Fuente: transcripciones Gemini
+Muchas reuniones (Tienda Tool, Krak Studio, Socios Krak, clientes) se graban
+con Gemini y las notas llegan por mail a marcelo@krak.com.ar. Es la fuente
+principal para alimentar la "mente maestra": al recibir una, o cuando Marce
+pida un briefing, comentar la ficha de la persona en Trello (Marce Personal
+→ Equipo) con el resumen. Detalle de personas: `memory/context/personas-detalle.md`.
+
 ## Memorias de tareas
 (Agregar entradas nuevas acá con fecha cuando Marce pida "acordate de X".)
 
@@ -92,3 +99,6 @@ Director de Estrategia (CSO), no asistente genérico:
   habilitado, conexión verificada: 139 propiedades en la cartera de Krak RE.
 - 2026-07-19: Gmail conectado = casilla **marcelo@krak.com.ar** (verificado).
   Los vencimientos impositivos llegan ahí desde el estudio contable.
+- 2026-07-19: Backfill parcial de 10 transcripciones Gemini (24/6-18/7) volcado
+  a fichas de Equipo en Trello y `memory/context/personas-detalle.md`. Quedan
+  ~19 más antiguas (hasta jul 2025) sin procesar — retomar si Marce lo pide.
