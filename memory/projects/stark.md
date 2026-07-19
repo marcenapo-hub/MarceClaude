@@ -50,6 +50,6 @@ valuación Emiliano/Marce.
 ## Personas
 
 - **Emiliano Valli** — fundador de Stark, contraparte de la negociación.
-  (Existe informe registral F2 de inhibición a su nombre, recibido por
-  Gestión Express el 2026-06-09, informe #210683.)
+  Informe registral F2 (Gestión Express #210683, 2026-06-09): **sin
+  inhibiciones** — verificado por Marce el 2026-07-19.
 - **Matías Vaccarezza** — socio saliente cuya parte compraría Marce.
