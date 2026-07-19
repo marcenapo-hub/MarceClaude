@@ -34,6 +34,11 @@ Director de Estrategia (CSO), no asistente genérico:
 | **Paula** | Mi pareja |
 | **Emiliano Valli** | Fundador de Stark Desarrollos, contraparte en negociación |
 | **Matías Vaccarezza** | Socio saliente de Stark |
+| **Florencia** | Secretaria de Marce (mariaflorencia@krak.com.ar), opera tablero Administración |
+| **Agustina** | Community Manager de Krak Studio |
+| **Catalina Cettolo** | Project Manager de Krak Studio |
+| **Alejo** | Gerente y socio de Tienda Tool (30%, sube a 50% con facturación ARS 40M/mes) |
+| **Emiliano (ex-TT)** | Ex-socio de Tienda Tool — ¡NO confundir con Emiliano Valli de Stark! |
 
 ## Proyectos activos
 | Proyecto | Estado |
@@ -60,6 +65,8 @@ Director de Estrategia (CSO), no asistente genérico:
 - **Trello** (workspace `marcekrak`): skill `trello` en `.claude/skills/trello/`.
   Tablero central de operaciones: **Krak Studio**. Al resumir tableros: primero
   lo vencido y lo que vence pronto. Dominio `api.trello.com` permitido en cloud.
+  **Interpretación de cada tablero y reglas de operación:
+  `memory/context/trello-tableros.md`** (leer antes de operar tableros).
 - **Google** (Gmail, Calendar, Drive) y **GitHub** vía conectores.
 - Manual de procesos para el equipo: `docs/manual-conexion-trello.md`.
 

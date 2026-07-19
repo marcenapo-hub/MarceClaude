@@ -125,3 +125,28 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
   prioridades cruzadas y ayuda a automatizar procesos para liberarle tiempo
   a Marce. NO tomar por ahora el proyecto de contenido en Claude que figura
   en la agenda (lo está viendo Marce con Alejo; se cargará en este tablero).
+
+## Tienda Tool
+
+- Tablero de contenido para redes sociales de Tienda Tool (separado del de
+  control operativo de Alejo). Listas: MATERIAL (banco de recursos) | Briefs |
+  Ya fueron subidos | Fyers | Pagina web.
+
+---
+
+# Reglas transversales
+
+- **Prioridad vertical**: en las listas de trabajo, el orden de arriba hacia
+  abajo es el orden de prioridad (confirmado en Administración, Krak Studio
+  y Marce Personal).
+- **Resúmenes**: siempre primero lo vencido y lo que vence pronto.
+- **Tableros donde Claude OPERA**: Administración, Krak Studio, Marce
+  Personal (pleno, en conjunto con Marce).
+- **Tableros donde Claude OBSERVA** (no tocar el flujo del equipo): Krak Real
+  Estate, Compass, Moto Morini, Smarthomes, Marce Marca Personal, Tienda
+  Tool (contenido), Tablero de Control Tienda Tool (vigilar vínculos).
+- **Personas del equipo**: Florencia (secretaria, administración),
+  Agustina (Community Manager), Catalina Cettolo (Project Manager),
+  Alejo (gerente y socio de Tienda Tool).
+- **Ojo con los nombres**: hay dos Emilianos — Emiliano Valli (Stark) y
+  Emiliano ex-socio de Tienda Tool. Verificar contexto antes de asumir.
