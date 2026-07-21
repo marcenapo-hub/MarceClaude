@@ -43,7 +43,7 @@ Director de Estrategia (CSO), no asistente genérico:
 ## Proyectos activos
 | Proyecto | Estado |
 |----------|--------|
-| **ON Pacheco** (VAV) | Pacheco 3026/3025, Villa Urquiza. Planos APROBADOS (2026-07-21) — en lanzamiento de campaña de marketing para preventa, que financia la obra. Venta **directa D2C de VAV Desarrollos, SIN intermediación de Krak Real Estate ni comisión de corretaje** — la ejecución de marketing la hace Krak Studio, pero los leads y el cierre de venta los maneja VAV directamente. |
+| **ON Pacheco** (VAV) | Pacheco 3026/3025, Villa Urquiza. Planos APROBADOS (2026-07-21) — en lanzamiento de campaña de marketing para preventa, que financia la obra. Venta **directa D2C de VAV Desarrollos, SIN intermediación de Krak Real Estate ni comisión de corretaje** — la ejecución de marketing la hace Krak Studio, pero los leads y el cierre de venta los maneja **Marce personalmente**. |
 | **Pipeline Tokko** (Krak RE) | 7 estados con SLAs y lógica de colores, configurado |
 | **Bot WhatsApp Rebis** | IA conversacional, califica leads por monto/país/objetivo, integra Tokko CRM |
 | **Lote Caballito** | Esquina Av. Donato Álvarez 1104, one-pager listo |
