@@ -15,6 +15,7 @@ Uso:
   python3 trello.py comment "Marce Personal" "Emi Valli" "Texto del comentario"
   python3 trello.py move "Krak Studio" "Nombre tarjeta" "En proceso" [--top|--bottom]
   python3 trello.py show "Marce Personal" "Emi Valli"     # detalle + comentarios
+  python3 trello.py label "Krak Studio" "Nombre tarjeta" "VAV Desarrollos"
 """
 import json
 import os
@@ -185,6 +186,18 @@ def main():
                 params[param] = rest[rest.index(flag) + 1]
         card = api("/cards", params, method="POST")
         print(f"Creada: {card['name']} → {card['shortUrl']}")
+
+    elif cmd == "label":
+        board, lists, card = find_card(args[0], args[1])
+        labels = api(f"/boards/{board['id']}/labels", {"fields": "name"})
+        wanted = [l for l in labels if args[2].lower() in (l.get("name") or "").lower()]
+        if not wanted:
+            names = ", ".join(l["name"] for l in labels if l.get("name"))
+            sys.exit(f"Etiqueta no encontrada. Disponibles: {names}")
+        if len(wanted) > 1:
+            sys.exit("Coincide con varias: " + ", ".join(l["name"] for l in wanted))
+        api(f"/cards/{card['id']}/idLabels", {"value": wanted[0]["id"]}, method="POST")
+        print(f"Etiqueta '{wanted[0]['name']}' agregada a '{card['name']}'")
 
     elif cmd == "comment":
         board, lists, card = find_card(args[0], args[1])

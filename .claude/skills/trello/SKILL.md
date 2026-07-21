@@ -24,7 +24,16 @@ python3 .claude/skills/trello/scripts/trello.py add-card "Krak Studio" "Tareas" 
 python3 .claude/skills/trello/scripts/trello.py comment "Marce Personal" "Emi Valli" "Resumen de la reunión..."
 python3 .claude/skills/trello/scripts/trello.py move "Krak Studio" "Nombre tarjeta" "En proceso" --top
 python3 .claude/skills/trello/scripts/trello.py show "Marce Personal" "Emi Valli"
+python3 .claude/skills/trello/scripts/trello.py label "Krak Studio" "Nombre tarjeta" "VAV Desarrollos"
 ```
+
+## Convención: dividir trabajo en tareas, no en proyectos
+
+Cuando Marce pide armar/lanzar algo (una campaña, un proyecto), crear una tarjeta
+por **tarea ejecutable concreta** (ej. "Armar Landing Page X", "Definir presupuesto
+X"), nunca una única tarjeta paraguas con todo el brief adentro. Cada tarjeta lleva
+la etiqueta del cliente/empresa correspondiente (`label`). Las tareas que bloquean
+a las demás (definiciones de Marce) van arriba en la prioridad vertical.
 
 Las tarjetas se devuelven en **orden de posición**: en las listas de trabajo de
 Marce, arriba = más prioritario (regla fija). `move --top/--bottom` posiciona.
