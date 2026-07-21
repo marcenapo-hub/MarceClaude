@@ -43,7 +43,7 @@ Director de Estrategia (CSO), no asistente genérico:
 ## Proyectos activos
 | Proyecto | Estado |
 |----------|--------|
-| **ON Pacheco** (VAV) | Pacheco 3026/3025, Villa Urquiza. Esperando aprobación municipal de planos; preventa financia la obra |
+| **ON Pacheco** (VAV) | Pacheco 3026/3025, Villa Urquiza. Planos APROBADOS (2026-07-21) — en lanzamiento de campaña de marketing para preventa, que financia la obra |
 | **Pipeline Tokko** (Krak RE) | 7 estados con SLAs y lógica de colores, configurado |
 | **Bot WhatsApp Rebis** | IA conversacional, califica leads por monto/país/objetivo, integra Tokko CRM |
 | **Lote Caballito** | Esquina Av. Donato Álvarez 1104, one-pager listo |

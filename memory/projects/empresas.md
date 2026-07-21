@@ -23,7 +23,9 @@
 
 ## VAV Desarrollos
 - Manual operativo v3: roles de socios, adquisición de tierra, vehículo legal, contratistas, pipeline de compradores en 7 etapas, canales de venta, reglas de redes, arquitectura de Drive, naming de archivos
-- **ON Pacheco** (Pacheco 3026/3025, Villa Urquiza): esperando aprobación municipal de planos antes de lanzar preventa. La preventa financia la construcción — dependencia crítica
+- **ON Pacheco** (Pacheco 3026/3025, Villa Urquiza): planos APROBADOS por el municipio
+  (2026-07-21). Entra en etapa de lanzamiento de campaña de marketing para preventa —
+  la preventa financia la construcción
 
 ## Tienda Tool
 - Popup de descuento 15% primera compra: copy optimizado, solo campos nombre + email
