@@ -150,3 +150,20 @@ Guía de cómo funciona cada tablero y qué se espera de Claude en cada uno.
   Alejo (gerente y socio de Tienda Tool).
 - **Ojo con los nombres**: hay dos Emilianos — Emiliano Valli (Stark) y
   Emiliano ex-socio de Tienda Tool. Verificar contexto antes de asumir.
+
+## Reunión de Socios (Pablo Kisieluk y Mariano Napolitano) — alcance correcto
+
+**NO confundir** el tablero **Krak Studio** con temas de la reunión de socios.
+Krak Studio = tareas operativas de marketing (ejecución de la agencia).
+
+Los temas de la reunión de socios son **estratégicos de negocio** vinculados a
+Krak Real Estate y Krak Studio como empresas, y viven principalmente en
+**Marce Personal** (tareas personales de Marce o temas a conversar con algún
+socio), no en tarjetas puntuales con el nombre "Pablo" o "Mariano" — esas casi
+no existen como tales. No hay etiquetas de persona en Trello, solo de
+cliente/proyecto — no sirve buscar por nombre de socio.
+
+Para armar la agenda de la reunión de socios: revisar temas estratégicos de
+negocio (no operativos de contenido) en Marce Personal + novedades relevantes
+de Krak RE/Krak Studio como negocio (ventas, KPIs, decisiones de equipo,
+Google Ads, etc.), no el calendario de publicaciones.
