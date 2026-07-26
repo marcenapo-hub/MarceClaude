@@ -47,6 +47,7 @@ Director de Estrategia (CSO), no asistente genérico:
 | **Pipeline Tokko** (Krak RE) | 7 estados con SLAs y lógica de colores, configurado |
 | **Bot WhatsApp Rebis** | IA conversacional, califica leads por monto/país/objetivo, integra Tokko CRM |
 | **Lote Caballito** | Esquina Av. Donato Álvarez 1104, one-pager listo |
+| **Captación de Terrenos Plaza Zapiola** (VAV) | Alan Leyendo detectó plaza en crecimiento. Carta física genérica (puerta a puerta) ofreciendo compra directa dueño-desarrollador, sin inmobiliarias ni comisión. Tarjeta en Krak Studio con la redacción de la carta. |
 | **Tasación IADT** | Pericia judicial de acciones, PDF 1.249 págs en 13 partes |
 | **Stark Desarrollos** | Negociación activa: entrada de Marce como Socio Gerente (compra parte de M. Vaccarezza). Contraparte: Emiliano Valli. → `memory/projects/stark.md` |
 
