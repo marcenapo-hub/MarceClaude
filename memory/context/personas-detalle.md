@@ -17,7 +17,9 @@ Extraído de transcripciones de Gemini (reuniones jun-jul 2026). Complementa
 ## Contactos externos — Real Estate
 - **Martín Szeinbaum** — originador de deal flow de lotes/oportunidades (Ruta 6 y 53,
   3 de Febrero y Maure, La Cigarra, Av. Congreso 1920, Oro y Juncal, Luján, Jorge
-  Newbery, Torre Gattas, Postal Carmelo). Ver `memory/projects/deal-flow-szeinbaum.md`.
+  Newbery, Torre Gattas, Postal Carmelo, entre otras). Ficha en Trello: **Marce
+  Personal → Equipo → "Martin Szeinbaum"** — ahí van los avances de cada reunión
+  (comentarios). Ver detalle sincronizado en `memory/projects/deal-flow-szeinbaum.md`.
 
 ## Equipo Krak Studio / Krak RE
 - **Catalina "Cata" Cettolo** — PM. Ajuste salarial formalizado (revisiones cada 6 meses)
