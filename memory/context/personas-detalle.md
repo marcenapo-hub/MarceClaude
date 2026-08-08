@@ -14,6 +14,11 @@ Extraído de transcripciones de Gemini (reuniones jun-jul 2026). Complementa
 - **Katy** — coordina envíos de mailing.
 - **Emi (ex-socio TT)** — hay una deuda pendiente con él por ajustar (saldo + venta de equipos), distinto de Emiliano Valli (Stark).
 
+## Contactos externos — Real Estate
+- **Martín Szeinbaum** — originador de deal flow de lotes/oportunidades (Ruta 6 y 53,
+  3 de Febrero y Maure, La Cigarra, Av. Congreso 1920, Oro y Juncal, Luján, Jorge
+  Newbery, Torre Gattas, Postal Carmelo). Ver `memory/projects/deal-flow-szeinbaum.md`.
+
 ## Equipo Krak Studio / Krak RE
 - **Catalina "Cata" Cettolo** — PM. Ajuste salarial formalizado (revisiones cada 6 meses)
   + propuesta de esquema de comisión por traer clientes nuevos (25/6). Lleva
