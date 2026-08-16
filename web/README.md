@@ -109,8 +109,17 @@ Están todos juntos al principio de `assets/css/styles.css`, en el bloque `:root
 
 ---
 
+### Cambiar la tipografía
+
+Gotham ya está instalada y se sirve desde el propio sitio, en los títulos. El
+texto corrido va en Montserrat porque **falta Gotham Book**, la pesada de
+lectura. Detalle completo y cómo activarla: `assets/fonts/LEEME.md`.
+
+---
+
 ## 5. Pendientes antes de salir a producción
 
+- [ ] Conseguir **Gotham Book** para el texto corrido (ver `assets/fonts/LEEME.md`)
 - [ ] Cargar la foto principal en `assets/img/marce-retrato.jpg`
 - [ ] Cargar la imagen de compartir en `assets/img/og-marce.jpg`
 - [ ] Configurar Formspree (punto 2)

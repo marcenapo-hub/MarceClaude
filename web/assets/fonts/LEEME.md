@@ -1,31 +1,61 @@
 # Tipografía — Gotham
 
-Gotham es una tipografía **licenciada** de Hoefler&Co. No es gratuita ni está en
-Google Fonts: para usarla en un sitio web hace falta una licencia de *webfont*.
+## Qué hay cargado
 
-## Cómo activarla
+Los cuatro archivos que entregó Marce, convertidos de `.otf` (formato de
+escritorio) a `.woff2` (formato web: pesa hasta 76 % menos y carga más rápido).
 
-1. Conseguir la licencia web en [typography.com](https://www.typography.com)
-   (plan Cloud.typography) o los archivos `.woff2` con licencia web incluida.
-2. Dejar los archivos en esta carpeta con estos nombres exactos:
+| Archivo | Contiene | Peso CSS | Tamaño |
+|---|---|---|---|
+| `gotham-bold.woff2` | Gotham Bold | 600–700 | 30 KB |
+| `gotham-black.woff2` | Gotham Black | 800–900 | 14 KB |
+| `gotham-thin.woff2` | Gotham Thin | 100–250 | 30 KB |
+| `gotham-bold-italic.woff2` | Gotham Bold Italic | 600–700 *itálica* | 18 KB |
 
-   - `gotham-book.woff2`   → peso 400 (texto)
-   - `gotham-medium.woff2` → peso 500 (destacados)
-   - `gotham-bold.woff2`   → peso 700 (títulos)
+> **Los nombres originales no coincidían con el contenido.** El archivo que venía
+> como `Gotham_Regular.otf` es en realidad Gotham **Black**, y el que venía como
+> `Gotham_Italic.otf` es **Bold Italic**. Se verificó midiendo el grosor real del
+> trazo, no leyendo los metadatos (que también estaban mal). Acá quedaron
+> renombrados según lo que realmente son.
 
-3. Listo. El `@font-face` ya está declarado al inicio de
-   `web/assets/css/styles.css` y toma los archivos automáticamente.
+## Falta Gotham Book
 
-> Si en vez de archivos usás el CDN de Cloud.typography, pegá el `<link>` que te
-> dan en el `<head>` de `index.html` y borrá los tres bloques `@font-face` del CSS.
+Las cuatro pesadas disponibles son de titular. **No hay una pesada de lectura**
+(Gotham Book, ~400): Bold da un párrafo macizo e ilegible y Thin desaparece a
+17 px.
 
-## Mientras tanto
+Por eso hoy el sitio usa:
 
-El sitio usa **Montserrat** (Google Fonts), que es el reemplazo geométrico más
-cercano a Gotham y es gratuita. Si el presupuesto de licencia no se justifica,
-Montserrat sola es una decisión perfectamente defendible: nadie fuera del rubro
-diseño va a notar la diferencia.
+- **Gotham Bold** → todos los títulos y el logo
+- **Montserrat** → texto corrido, menús, botones y formulario
 
-**Importante:** no subas a este repositorio archivos de Gotham obtenidos de
-fuentes no oficiales. Es la fuente tipográfica más pirateada del mundo y el
-riesgo legal es real, sobre todo en un sitio con tu nombre y matrícula.
+### Cuando consigas Gotham Book
+
+1. Dejá el archivo acá como `gotham-book.woff2`.
+   Si viene en `.otf`, convertilo primero:
+   ```bash
+   pip install fonttools brotli
+   python3 -c "from fontTools.ttLib import TTFont; f=TTFont('Gotham-Book.otf'); f.flavor='woff2'; f.save('gotham-book.woff2')"
+   ```
+2. En `assets/css/styles.css`, descomentá el bloque `@font-face` de Gotham Book
+   (está señalado con un comentario).
+3. En el mismo archivo, cambiá el token:
+   ```css
+   --fuente-texto: "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+   ```
+4. Opcional: sacá del `<head>` de `index.html` las tres líneas de Google Fonts,
+   que dejan de hacer falta.
+
+Con eso el sitio pasa a Gotham completo sin tocar nada más.
+
+## Licencia
+
+Los archivos entregados son de **escritorio** (los que se instalan para trabajar
+en Illustrator o InDesign). Servir una tipografía desde un sitio web público es
+un uso distinto, que la licencia de escritorio normalmente no cubre.
+
+Si en algún momento se quiere regularizar, la licencia web se compra en
+[typography.com](https://www.typography.com) (Cloud.typography, desde ~USD 100
+al año según tráfico). Alternativa sin costo: usar Montserrat también en los
+títulos — es el sustituto geométrico más cercano y nadie fuera del rubro diseño
+nota la diferencia.

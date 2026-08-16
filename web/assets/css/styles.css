@@ -4,32 +4,50 @@
    ========================================================= */
 
 /* ---------- Tipografía: Gotham ----------
-   Gotham (Hoefler&Co) es una fuente licenciada. Colocá los .woff2 con licencia
-   web en web/assets/fonts/ con estos nombres y se activa automáticamente.
-   Si los archivos no existen, el navegador cae en Montserrat (sustituta
-   geométrica cercana, cargada desde Google Fonts en index.html).
+   Pesadas disponibles hoy: Thin (200), Bold (700), Black (900) y Bold Italic.
+   FALTA Gotham Book (~400), que es la pesada de lectura. Por eso Gotham se usa
+   en títulos y el texto corrido va en Montserrat. Apenas esté el archivo
+   gotham-book.woff2, se descomenta el bloque de abajo y se cambia
+   --fuente-texto a "Gotham". Ver assets/fonts/LEEME.md.
    ----------------------------------------------------------------------- */
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/gotham-book.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/gotham-medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/gotham-thin.woff2") format("woff2");
+  font-weight: 100 250;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gotham";
   src: url("../fonts/gotham-bold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 600 700;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-black.woff2") format("woff2");
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-bold-italic.woff2") format("woff2");
+  font-weight: 600 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Cuando llegue Gotham Book, descomentar:
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-book.woff2") format("woff2");
+  font-weight: 300 500;
+  font-style: normal;
+  font-display: swap;
+}
+*/
 
 /* ---------- Tokens ---------- */
 :root {
@@ -55,7 +73,8 @@
 
   /* Tipografía */
   --fuente-titulo: "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif;
-  --fuente-texto:  "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  /* Texto corrido en Montserrat hasta contar con Gotham Book */
+  --fuente-texto:  "Montserrat", "Helvetica Neue", Arial, sans-serif;
 
   /* Medidas */
   --ancho:        1180px;
@@ -92,9 +111,9 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--fuente-titulo);
-  font-weight: 600;
+  font-weight: 700;          /* Gotham Bold */
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;  /* Gotham es amplia: se cierra apenas en títulos */
   color: var(--tinta);
 }
 
@@ -227,7 +246,8 @@ p + p { margin-top: 1em; }
   text-decoration: none;
   white-space: nowrap;
 }
-.marca span { color: var(--salvia-osc); font-weight: 500; }
+/* Mismo peso que la marca: evita descargar Gotham Thin sólo por el punto */
+.marca span { color: var(--salvia-osc); }
 
 .nav__lista {
   display: flex;
