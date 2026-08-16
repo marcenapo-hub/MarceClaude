@@ -538,12 +538,14 @@ p + p { margin-top: 1em; }
 .unidad__enlace svg { flex: none; }
 
 /* ---------- Banda de ejercicio profesional ---------- */
+/* Texto en tinta y no en blanco: sobre el salvia, el blanco da 2,8:1 de
+   contraste (ilegible) y la tinta 5,4:1. */
 .banda {
   background: var(--salvia);
-  color: var(--blanco);
+  color: var(--tinta);
 }
-.banda h2, .banda .etiqueta { color: var(--blanco); }
-.banda .etiqueta::after { background: rgba(255,255,255,.4); }
+.banda h2, .banda .etiqueta { color: var(--tinta); }
+.banda .etiqueta::after { background: rgba(35, 41, 43, .28); }
 .banda__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -552,18 +554,19 @@ p + p { margin-top: 1em; }
   margin-top: 2.5rem;
 }
 @media (max-width: 820px) { .banda__grid { grid-template-columns: 1fr; } }
-.banda p { color: rgba(255,255,255,.92); max-width: var(--ancho-texto); }
+.banda p { color: rgba(35, 41, 43, .88); max-width: var(--ancho-texto); }
 .banda__servicios {
   display: grid;
   gap: 1rem;
 }
 .banda__servicios li {
   padding: 1.1rem 1.35rem;
-  background: rgba(255,255,255,.14);
-  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(252, 249, 244, .55);
+  border: 1px solid rgba(252, 249, 244, .75);
   border-radius: var(--radio);
   font-size: .9375rem;
   font-weight: 500;
+  color: var(--tinta);
 }
 
 /* ---------- Contacto ---------- */
