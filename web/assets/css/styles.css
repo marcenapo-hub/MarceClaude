@@ -326,6 +326,7 @@ p + p { margin-top: 1em; }
   font-size: clamp(2.6rem, 1.6rem + 4.6vw, 5rem);
   margin-top: 1.5rem;
   font-weight: 700;
+  color: var(--salvia);
 }
 .hero__bajada {
   margin-top: 1.75rem;
