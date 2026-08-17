@@ -56,18 +56,23 @@
   --niebla:       #d0d5d9;
   --gris:         #ededed;
   --crema:        #fcf9f4;
-
-  /* Derivados (agregados por contraste, ver README) */
-  --tinta:        #23292b;
-  --tinta-suave:  #4f5b58;
-  --salvia-osc:   #55696f;
   --blanco:       #ffffff;
+
+  /* Escala del salvia — mismo matiz (170°) que #869f9b, oscurecido para que
+     TODO el texto sea del color de marca y siga siendo legible.
+     Contraste medido sobre el fondo crema #fcf9f4:                          */
+  --salvia-300:   #5e7d78;   /*  4,27:1  títulos                             */
+  --salvia-500:   #47625d;   /*  6,30:1  texto secundario y etiquetas        */
+  --salvia-700:   #364c49;   /*  8,74:1  texto corrido                       */
+  --salvia-900:   #1f2e2b;   /* 13,47:1  pie, botones, texto sobre el salvia */
 
   /* Roles */
   --fondo:        var(--crema);
   --fondo-alt:    var(--blanco);
-  --texto:        var(--tinta);
-  --texto-2:      var(--tinta-suave);
+  --texto:        var(--salvia-700);
+  --texto-2:      var(--salvia-500);
+  --titulo:       var(--salvia-300);
+  --profundo:     var(--salvia-900);
   --linea:        var(--niebla);
   --acento:       var(--salvia);
 
@@ -114,15 +119,15 @@ h1, h2, h3, h4 {
   font-weight: 700;          /* Gotham Bold */
   line-height: 1.1;
   letter-spacing: -0.015em;  /* Gotham es amplia: se cierra apenas en títulos */
-  color: var(--tinta);
+  color: var(--titulo);
 }
 
 p + p { margin-top: 1em; }
 
-::selection { background: var(--salvia); color: var(--blanco); }
+::selection { background: var(--salvia); color: var(--crema); }
 
 :focus-visible {
-  outline: 2px solid var(--salvia-osc);
+  outline: 2px solid var(--salvia-500);
   outline-offset: 3px;
   border-radius: var(--radio);
 }
@@ -143,7 +148,7 @@ p + p { margin-top: 1em; }
 
 .saltar {
   position: absolute; left: 1rem; top: -100%;
-  background: var(--tinta); color: var(--crema);
+  background: var(--profundo); color: var(--crema);
   padding: .75rem 1.25rem; z-index: 100;
   transition: top var(--transicion);
 }
@@ -151,10 +156,10 @@ p + p { margin-top: 1em; }
 
 .etiqueta {
   font-size: .75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--salvia-osc);
+  color: var(--salvia-500);
   display: flex;
   align-items: center;
   gap: .75rem;
@@ -203,18 +208,18 @@ p + p { margin-top: 1em; }
 .boton:active { transform: translateY(0); }
 
 .boton--primario {
-  background: var(--tinta);
+  background: var(--profundo);
   color: var(--crema);
 }
-.boton--primario:hover { background: var(--salvia-osc); }
+.boton--primario:hover { background: var(--salvia-700); }
 
 .boton--secundario {
   background: transparent;
-  color: var(--tinta);
-  border-color: var(--tinta);
+  color: var(--texto);
+  border-color: var(--texto);
 }
 .boton--secundario:hover {
-  background: var(--tinta);
+  background: var(--profundo);
   color: var(--crema);
 }
 
@@ -247,7 +252,7 @@ p + p { margin-top: 1em; }
   white-space: nowrap;
 }
 /* Mismo peso que la marca: evita descargar Gotham Thin sólo por el punto */
-.marca span { color: var(--salvia-osc); }
+.marca span { color: var(--salvia-500); }
 
 .nav__lista {
   display: flex;
@@ -265,7 +270,7 @@ p + p { margin-top: 1em; }
 }
 .nav__lista a:hover,
 .nav__lista a[aria-current="true"] {
-  color: var(--tinta);
+  color: var(--texto);
   border-bottom-color: var(--salvia);
 }
 .nav__lista .boton { color: var(--crema); border-bottom: 0; }
@@ -282,7 +287,7 @@ p + p { margin-top: 1em; }
 }
 .menu-boton span {
   display: block; width: 18px; height: 1.5px;
-  background: var(--tinta); margin: 4px 0;
+  background: var(--texto); margin: 4px 0;
   transition: transform var(--transicion), opacity var(--transicion);
 }
 .menu-boton[aria-expanded="true"] span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
@@ -336,7 +341,7 @@ p + p { margin-top: 1em; }
   max-width: 34ch;
   font-weight: 400;
 }
-.hero__bajada strong { color: var(--tinta); font-weight: 600; }
+.hero__bajada strong { color: var(--texto); font-weight: 600; }
 
 .hero__acciones {
   margin-top: 2.5rem;
@@ -369,7 +374,7 @@ p + p { margin-top: 1em; }
   content: "";
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 0 0 1px rgba(35, 41, 43, .07);
+  box-shadow: inset 0 0 0 1px rgba(31, 46, 43, .07);
   border-radius: inherit;
   pointer-events: none;
 }
@@ -400,7 +405,7 @@ p + p { margin-top: 1em; }
   gap: .5rem;
   padding: 2rem;
   background: var(--niebla);
-  color: var(--salvia-osc);
+  color: var(--salvia-700);
   font-size: .8125rem;
   letter-spacing: .04em;
 }
@@ -438,7 +443,7 @@ p + p { margin-top: 1em; }
 .perfil__texto p { color: var(--texto-2); }
 .perfil__texto p:first-child {
   font-size: 1.2em;
-  color: var(--tinta);
+  color: var(--texto);
   line-height: 1.55;
 }
 
@@ -457,10 +462,10 @@ p + p { margin-top: 1em; }
 }
 .datos__fila dt {
   font-size: .75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--salvia-osc);
+  color: var(--salvia-500);
 }
 .datos__fila dd { margin: 0; color: var(--texto); }
 @media (max-width: 520px) {
@@ -488,7 +493,7 @@ p + p { margin-top: 1em; }
 .unidad:hover {
   transform: translateY(-4px);
   border-color: var(--salvia);
-  box-shadow: 0 18px 40px -28px rgba(35, 41, 43, .45);
+  box-shadow: 0 18px 40px -28px rgba(31, 46, 43, .45);
 }
 
 .unidad__logo {
@@ -510,7 +515,7 @@ p + p { margin-top: 1em; }
   font-weight: 700;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--salvia-osc);
+  color: var(--salvia-500);
 }
 .unidad__nombre {
   font-size: 1.5rem;
@@ -554,12 +559,12 @@ p + p { margin-top: 1em; }
   font-weight: 600;
   font-size: .9375rem;
   text-decoration: none;
-  color: var(--tinta);
+  color: var(--texto);
   border-bottom: 1px solid var(--salvia);
   padding-bottom: .2rem;
   transition: gap var(--transicion), color var(--transicion);
 }
-.unidad__enlace:hover { gap: .85rem; color: var(--salvia-osc); }
+.unidad__enlace:hover { gap: .85rem; color: var(--titulo); }
 .unidad__enlace svg { flex: none; }
 
 /* ---------- Banda en color (cierre de contacto) ---------- */
@@ -567,11 +572,11 @@ p + p { margin-top: 1em; }
    contraste (ilegible) y la tinta 5,4:1. */
 .banda {
   background: var(--salvia);
-  color: var(--tinta);
+  color: var(--profundo);
 }
-.banda h2, .banda .etiqueta { color: var(--tinta); }
-.banda .etiqueta::after { background: rgba(35, 41, 43, .28); }
-.banda p { color: rgba(35, 41, 43, .88); }
+.banda h2, .banda .etiqueta { color: var(--profundo); }
+.banda .etiqueta::after { background: rgba(31, 46, 43, .28); }
+.banda p { color: var(--profundo); }
 
 /* ---------- Contacto ---------- */
 .contacto__grid {
@@ -594,19 +599,19 @@ p + p { margin-top: 1em; }
 }
 .contacto__dato dt {
   font-size: .75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--salvia-osc);
+  color: var(--salvia-500);
 }
 .contacto__dato dd { margin: 0; }
 .contacto__dato a { text-decoration: none; border-bottom: 1px solid var(--niebla); }
 .contacto__dato a:hover { border-bottom-color: var(--salvia); }
 
 /* Sobre el fondo salvia, el salvia oscuro no contrasta: pasa a tinta */
-.banda .contacto__dato dt { color: var(--tinta); }
-.banda .contacto__dato a { border-bottom-color: rgba(35, 41, 43, .3); }
-.banda .contacto__dato a:hover { border-bottom-color: var(--tinta); }
+.banda .contacto__dato dt { color: var(--profundo); }
+.banda .contacto__dato a { border-bottom-color: rgba(31, 46, 43, .3); }
+.banda .contacto__dato a:hover { border-bottom-color: var(--profundo); }
 
 /* Formulario */
 .formulario {
@@ -626,7 +631,7 @@ p + p { margin-top: 1em; }
   letter-spacing: .04em;
   color: var(--texto);
 }
-.campo label .req { color: var(--salvia-osc); }
+.campo label .req { color: var(--salvia-500); }
 
 .campo input,
 .campo select,
@@ -698,7 +703,7 @@ p + p { margin-top: 1em; }
 .aviso--ok {
   background: rgba(134, 159, 155, .16);
   border-color: var(--salvia);
-  color: var(--tinta);
+  color: var(--texto);
 }
 .aviso--error {
   background: rgba(168, 86, 77, .08);
@@ -708,7 +713,7 @@ p + p { margin-top: 1em; }
 
 /* ---------- Footer ---------- */
 .pie {
-  background: var(--tinta);
+  background: var(--profundo);
   color: rgba(252, 249, 244, .72);
   padding-block: clamp(3rem, 6vw, 4.5rem) 2rem;
 }

@@ -93,19 +93,36 @@ y guardás.
 Están todos juntos al principio de `assets/css/styles.css`, en el bloque `:root`:
 
 ```css
---salvia:  #869f9b;   /* acento principal */
---niebla:  #d0d5d9;
---gris:    #ededed;
---crema:   #fcf9f4;   /* fondo del sitio */
---tinta:   #23292b;   /* texto */
+--salvia:      #869f9b;   /* color de marca: titular, acentos, banda */
+--salvia-300:  #5e7d78;   /* títulos de sección */
+--salvia-500:  #47625d;   /* texto secundario y etiquetas */
+--salvia-700:  #364c49;   /* texto corrido */
+--salvia-900:  #1f2e2b;   /* pie, botones, texto sobre el salvia */
+--crema:       #fcf9f4;   /* fondo del sitio */
+--niebla:      #d0d5d9;   /* líneas y bordes */
 ```
 
-> **Nota sobre la paleta:** los cuatro colores de marca son claros o medios.
-> `#869f9b` sobre `#fcf9f4` da 2.2:1 de contraste, muy por debajo del mínimo
-> legible (4.5:1), así que no puede usarse para texto. Por eso se agregaron dos
-> derivados de la misma familia — `--tinta` (#23292b) para texto y `--salvia-osc`
-> (#55696f) para links — que sí cumplen. Si el manual de marca ya define tonos
-> oscuros propios, reemplazá esos dos valores y el sitio entero se actualiza.
+**Todo el texto del sitio es del color de marca.** El `#869f9b` puro tiene sólo
+2,7:1 de contraste sobre el fondo crema, muy por debajo de lo legible, así que
+en vez de mezclarlo con grises ajenos se construyó una escala del *mismo* color:
+idéntico matiz (170°) y saturación equivalente, oscurecido en cuatro pasos. A
+simple vista todo se lee como el mismo verde de la marca; la diferencia es que
+cada paso se usa donde su contraste alcanza.
+
+| Paso | Contraste sobre crema | Mínimo exigido | Dónde se usa |
+|---|---|---|---|
+| `#869f9b` | 2,7:1 | 3:1 (texto grande) | Titular del inicio, acentos, fondo de la banda |
+| `#5e7d78` | 4,3:1 | 3:1 | Títulos de sección |
+| `#47625d` | 6,3:1 | 4,5:1 | Texto secundario, etiquetas en versalitas |
+| `#364c49` | 8,7:1 | 4,5:1 | Texto corrido |
+| `#1f2e2b` | 13,5:1 | 4,5:1 | Pie, botones, texto sobre el fondo salvia |
+
+> El único elemento que queda por debajo del mínimo es el **titular del inicio**,
+> por decisión de marca: va en el `#869f9b` exacto del manual. Si alguna vez se
+> quiere que cumpla, `#77908c` da 3,25:1 y a simple vista es el mismo color.
+
+Las etiquetas en versalitas van en peso 700 en vez de 600: al ir en color y no
+en negro, el peso extra compensa la pérdida de definición.
 
 ---
 
