@@ -403,6 +403,16 @@ p + p { margin-top: 1em; }
   font-size: .8125rem;
   letter-spacing: .04em;
 }
+/* Marcador chico, para los logos de las tarjetas */
+.marcador--chico {
+  position: static;
+  display: inline-flex;
+  padding: .45rem .7rem;
+  background: transparent;
+  border: 1px dashed var(--niebla);
+  border-radius: var(--radio);
+}
+
 .marcador code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .75rem;
@@ -478,6 +488,20 @@ p + p { margin-top: 1em; }
   transform: translateY(-4px);
   border-color: var(--salvia);
   box-shadow: 0 18px 40px -28px rgba(35, 41, 43, .45);
+}
+
+.unidad__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 1.75rem;
+}
+.unidad__logo img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .unidad__tipo {

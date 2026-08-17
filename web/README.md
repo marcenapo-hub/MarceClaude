@@ -37,7 +37,7 @@ Hoy el formulario funciona en **modo provisorio**: al enviarlo abre el programa
 de mail del visitante con el mensaje ya escrito. Sirve, pero se pierden
 contactos (mucha gente no tiene mail configurado en el celular).
 
-Para que los mensajes lleguen solos a **marcelo@krak.com.ar**:
+Para que los mensajes lleguen solos a **info@marcenapolitano.com.ar**:
 
 1. Crear una cuenta gratis en [formspree.io](https://formspree.io) con esa casilla.
 2. Crear un formulario nuevo. Te da un ID que se ve así: `xayzbwqd`.
@@ -56,7 +56,7 @@ mensual) o [Basin](https://usebasin.com).
 
 **Ya viene incluido:** trampa antispam (honeypot), validación de campos, avisos
 de éxito y error, y el selector de motivo de contacto para que sepas de entrada
-si el mensaje es de Krak RE, Krak Studio, VAV o una tasación.
+si el mensaje es de Krak RE, Krak Studio o VAV.
 
 ---
 
@@ -119,14 +119,12 @@ lectura. Detalle completo y cómo activarla: `assets/fonts/LEEME.md`.
 
 ## 5. Pendientes antes de salir a producción
 
-- [ ] Conseguir **Gotham Book** para el texto corrido (ver `assets/fonts/LEEME.md`)
 - [ ] Cargar la foto principal en `assets/img/marce-retrato.jpg`
+- [ ] Cargar los tres logos en `assets/img/logos/` (ver `assets/img/logos/LEEME.md`)
 - [ ] Cargar la imagen de compartir en `assets/img/og-marce.jpg`
 - [ ] Configurar Formspree (punto 2)
-- [ ] Confirmar las URLs reales de Krak Real Estate y Krak Studio en `index.html`
-      (hoy apuntan a `krak.com.ar` y `krakstudio.com.ar`)
-- [ ] Definir si VAV Desarrollos tiene sitio propio para enlazar
-- [ ] Comprar el dominio y reemplazar `marcenapolitano.com` en las etiquetas
-      `<meta>` y `<link rel="canonical">` del `<head>`
+- [ ] Conseguir **Gotham Book** para el texto corrido (ver `assets/fonts/LEEME.md`)
+- [ ] Confirmar el dominio: hoy las etiquetas `<meta>` y `<link rel="canonical">`
+      dicen `www.marcenapolitano.com.ar`, deducido del mail de contacto
 - [ ] Revisar y ajustar los textos del perfil: están escritos con tu criterio y
       tu información, pero la voz final es tuya

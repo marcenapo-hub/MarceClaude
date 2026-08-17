@@ -95,8 +95,8 @@
 
   /* ---------- Fotos: ocultar el marcador cuando la imagen carga ---------- */
   document.querySelectorAll("[data-foto]").forEach(function (img) {
-    var figura = img.closest("figure");
-    var marcador = figura ? figura.querySelector("[data-marcador]") : null;
+    var contenedor = img.parentElement;
+    var marcador = contenedor ? contenedor.querySelector("[data-marcador]") : null;
 
     var ok = function () { if (marcador) marcador.remove(); };
     var falla = function () { img.remove(); }; // queda el marcador visible
@@ -116,7 +116,7 @@
   var avisoOk = document.getElementById("aviso-ok");
   var avisoError = document.getElementById("aviso-error");
   var botonEnviar = document.getElementById("boton-enviar");
-  var MAIL = "marcelo@krak.com.ar";
+  var MAIL = "info@marcenapolitano.com.ar";
 
   var mostrarError = function (texto) {
     if (!avisoError) return;
