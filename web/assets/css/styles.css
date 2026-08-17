@@ -500,11 +500,11 @@ p + p { margin-top: 1em; }
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 34px;
+  min-height: 44px;
   margin-bottom: 1.75rem;
 }
 .unidad__logo img {
-  height: 34px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   object-position: left center;

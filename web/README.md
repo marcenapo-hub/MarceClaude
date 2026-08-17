@@ -136,10 +136,8 @@ lectura. Detalle completo y cómo activarla: `assets/fonts/LEEME.md`.
 
 ## 5. Pendientes antes de salir a producción
 
-- [ ] Cargar la foto principal en `assets/img/marce-retrato.jpg`
-- [ ] Cargar los tres logos en `assets/img/logos/` (ver `assets/img/logos/LEEME.md`)
-- [ ] Cargar la imagen de compartir en `assets/img/og-marce.jpg`
-- [ ] Configurar Formspree (punto 2)
+- [x] ~~Foto principal, logos e imagen de compartir~~ — cargados
+- [ ] Configurar Formspree (punto 2) — **es lo único que falta para publicar**
 - [ ] Conseguir **Gotham Book** para el texto corrido (ver `assets/fonts/LEEME.md`)
 - [ ] Confirmar el dominio: hoy las etiquetas `<meta>` y `<link rel="canonical">`
       dicen `www.marcenapolitano.com.ar`, deducido del mail de contacto

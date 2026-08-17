@@ -1,25 +1,36 @@
 # Logos de las unidades de negocio
 
-Dejá los tres archivos acá con **exactamente estos nombres** y aparecen solos en
-las tarjetas de la sección "Unidades de negocio". Mientras falte alguno, en su
-lugar se ve un recuadro punteado con el nombre del archivo que espera.
+Los tres están cargados, en el verde de marca y con fondo transparente.
 
-| Archivo | Empresa | Carpeta de origen en Drive |
+| Archivo | Empresa | Original |
 |---|---|---|
-| `krak-real-estate.png` | Krak Real Estate | "LogoKrak Horizontal RE sin.png" |
-| `krak-studio.png` | Krak Studio | "studio_h-4x.png" |
-| `vav-desarrollos.png` | VAV Desarrollos | alguno de los `logos_VAV-0X.png` |
+| `krak-real-estate.png` | Krak Real Estate | `LogoKrak Horizontal RE sin.png` |
+| `krak-studio.png` | Krak Studio | `studio_h-4x.png` |
+| `vav-desarrollos.png` | VAV Desarrollos | `logos_VAV_0 1.png` |
 
-## Requisitos
+## Cómo se prepararon
 
-- **Fondo transparente** (PNG o, mejor todavía, SVG). Las tarjetas son de color
-  crema: un logo con fondo blanco se va a ver como un parche.
-- **Versión horizontal**, que es la que entra bien en el ancho de la tarjeta.
-- **Versión oscura** del logo: el fondo de la tarjeta es claro.
-- Alto útil: se muestran a 34 px, así que con un archivo de 200–400 px de alto
-  sobra. Si el original es enorme, comprimilo en [squoosh.app](https://squoosh.app).
+Los originales venían en colores distintos —azul los Krak, negro VAV— y en dos
+formatos: blanco sobre transparente uno, tinta sobre fondo blanco los otros. Se
+los pasó a **silueta monocroma** en `#364c49`, el mismo verde del texto del
+sitio, tomando la forma del canal de transparencia o de la luminosidad según el
+caso.
 
-> Si tenés los logos en **SVG**, mejor: se ven nítidos en cualquier pantalla y
-> pesan menos. En ese caso guardalos con la misma raíz y extensión `.svg`
-> (`krak-real-estate.svg`) y cambiá la extensión en las tres etiquetas `<img>`
-> de `index.html`.
+Los tres no están al mismo alto: los Krak son icono + texto al costado y VAV es
+un bloque apilado, así que igualarlos por altura los haría ver de tamaños
+distintos. Se ajustó el de VAV al 72 % para que la palabra principal quede
+ópticamente pareja con "KRAK".
+
+Los archivos son lienzos de 120 px de alto (3× de los 40 px a los que se
+muestran, para que se vean nítidos en pantallas retina), con el logo centrado
+verticalmente. Ese lienzo común es lo que mantiene la proporción entre los tres.
+
+## Para regenerarlos
+
+El script está en el historial de la conversación; en esencia: tomar el molde
+(canal alfa si el fondo ya es transparente, luminosidad si el fondo es blanco),
+pintarlo del color deseado, recortar el aire sobrante, escalar a la altura que
+corresponda y centrar en el lienzo de 120 px.
+
+Si algún día conseguís los logos en **SVG**, mejor: se ven nítidos a cualquier
+tamaño y el recoloreado es cambiar un atributo `fill`.
