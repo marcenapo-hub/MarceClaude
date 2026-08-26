@@ -62,22 +62,44 @@ si el mensaje es de Krak RE, Krak Studio o VAV.
 
 ## 3. Publicarlo
 
-### Opción A — Vercel (recomendada, 5 minutos)
+### Opción A — Hostinger (la que usa Marce)
 
-1. Entrar a [vercel.com](https://vercel.com) e iniciar sesión con GitHub.
+El sitio no necesita compilarse: son archivos sueltos que se copian y ya.
+
+1. hPanel → **Administrador de archivos**.
+2. Entrar a la carpeta `public_html` y **vaciarla** si trae la página de ejemplo
+   que Hostinger deja por defecto.
+3. Subir el **contenido** de la carpeta `web/` — es decir `index.html` y la
+   carpeta `assets/` — directamente adentro de `public_html`.
+   **No** subir la carpeta `web` entera: `index.html` tiene que quedar en la
+   raíz de `public_html`, no en `public_html/web/`.
+4. Listo. Entrando al dominio ya se ve.
+
+Si subís un `.zip`, el Administrador de archivos lo descomprime desde el menú
+del botón derecho → *Extraer*.
+
+**Para actualizar más adelante:** se reemplaza el archivo que cambió. Si sólo
+cambian textos, es únicamente `index.html`.
+
+> **El correo no depende de la web.** Las casillas del dominio (`info@…`) se
+> crean en hPanel → *Emails*, funcionan por los registros MX y están operativas
+> aunque `public_html` esté vacío. Se pueden hacer las dos cosas en cualquier
+> orden.
+
+### Opción B — Vercel
+
+1. [vercel.com](https://vercel.com), iniciar sesión con GitHub.
 2. *Add New → Project* → elegir este repositorio.
 3. En **Root Directory** poner `web`. Framework: *Other*. Sin comando de build.
 4. *Deploy*.
 
-Queda online en una URL `.vercel.app`. Para usar `marcenapolitano.com`:
-*Settings → Domains → Add*, y Vercel te dice qué registros DNS cargar donde
-tengas comprado el dominio.
+Conviene si en algún momento se quiere que el sitio se actualice solo con cada
+cambio en el repositorio, sin subir archivos a mano.
 
-### Opción B — GitHub Pages
+### Opción C — GitHub Pages
 
-*Settings → Pages* del repositorio → *Deploy from a branch* → rama
-`claude/marce-napolitano-website-d2eejy`, carpeta `/web`. Tarda un par de
-minutos en levantar.
+*Settings → Pages* → *Deploy from a branch* → rama
+`claude/marce-napolitano-website-d2eejy`, carpeta `/web`.
 
 ---
 
